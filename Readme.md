@@ -1,6 +1,6 @@
 # 🛒 E-Commerce Website Testing - Test Cases
 
-This repository contains **manual test cases** for an E-Commerce website (`demowebshop tricentis.com`).  
+This repository contains **manual test cases** for an E-Commerce website (`demowebshop.tricentis.com`).  
 The test cases cover **Registration, Login, Product Search and Cart** functionalities.
 
 ---
