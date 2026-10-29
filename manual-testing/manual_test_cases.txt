@@ -1,0 +1,69 @@
+TEST SENARIOS OF SARIKA TRADERS.
+
+A. Homepage and navigation
+ID	Test scenario	Expected result	Priority
+TC001	Open the homepage	Page loads without an application error	P1
+TC002	Verify hero title and description	Correct content is visible	P2
+TC003	Navigate hero carousel	Slides change correctly, if controls exist	P2
+TC004	Click Shop Now	Opens the intended shopping page	P1
+TC005	Click Products	Product listing opens	P1
+TC006	Click About Us	About page loads correctly	P2
+TC007	Click Contact	Contact page loads correctly	P1
+TC008	Click Help Center	Correct support destination opens	P2
+TC009	Click Shipping Info	Shipping information is displayed	P2
+TC010	Click Orders while signed out	Appropriate login or access flow appears	P1
+TC011	Click Privacy Policy	Correct policy page opens	P3
+TC012	Click Terms of Service	Correct terms page opens	P3
+
+B. Categories and product discovery
+ID	Test scenario	Expected result	Priority
+TC013	Open Flours category	Relevant products are displayed	P1
+TC014	Open Oil category	Relevant products are displayed	P1
+TC015	Open Rice category	Relevant products are displayed	P1
+TC016	Open Spices category	Relevant products are displayed	P1
+TC017	Open an individual product	Product details match the selected item	P1
+TC018	Verify product name, image and price	Data is consistent across listing and details	P1
+TC019	Open a category with no available products	Clear empty state is shown	P2
+TC020	Navigate back from product details	Previous listing and state are preserved appropriately	P2
+TC021	Refresh a category or product URL	Page loads correctly without broken state	P2
+
+C. Cart and checkout
+These cases are conditional on confirming that cart and checkout functionality exists.
+ID	Test scenario	Expected result	Priority
+TC022	Add an available product to cart	Correct item is added	P1
+TC023	Add the same product twice	Quantity or line items update according to design	P1
+TC024	Increase and decrease quantity	Quantity and totals update correctly	P1
+TC025	Enter quantity zero or a negative quantity	Invalid quantity is rejected or handled safely	P1
+TC026	Remove an item from cart	Item is removed and totals recalculate	P1
+TC027	Open an empty cart	Appropriate empty-cart message appears	P2
+TC028	Verify subtotal calculation	Sum of line-item totals is correct	P1
+TC029	Verify shipping and final total	Fees and discounts are applied correctly	P1
+TC030	Submit checkout with required fields empty	Validation prevents invalid submission	P1
+TC031	Enter invalid email or phone details	Invalid data is rejected with useful feedback	P1
+TC032	Complete a permitted test checkout	Order confirmation and order details are correct	P1
+TC033	Refresh or revisit after adding items	Cart persistence matches the intended design	P2
+
+D. Newsletter, forms and orders
+ID	Test scenario	Expected result	Priority
+TC034	Submit newsletter with a valid email	Clear success feedback is displayed	P2
+TC035	Submit newsletter with an invalid email	Validation error is displayed	P2
+TC036	Submit newsletter with a blank email	Submission is prevented or handled as specified	P2
+TC037	Subscribe using an already registered email	Duplicate subscription is handled gracefully	P3
+TC038	Submit contact form with valid data	Confirmation is displayed and submission is processed	P1
+TC039	Submit contact form with required fields missing	Required-field validation works	P1
+TC040	Submit contact form with malformed input	Invalid values are rejected safely	P2
+TC041	Access order history while signed out	Appropriate authentication behavior is shown	P1
+TC042	Access order history as an authenticated user	Only that user's authorized orders are shown	P1
+TC043	Refresh after form submission	No unintended duplicate submission occurs	P2
+
+E. Compatibility, security and usability
+ID	Test scenario	Expected result	Priority
+TC044	Open homepage at mobile width	Content fits and remains usable	P2
+TC045	Use navigation with keyboard only	Interactive elements are reachable and usable	P2
+TC046	Verify input labels and accessible names	Forms can be understood by assistive technology	P2
+TC047	Verify images and product thumbnails	Relevant images load with suitable alternative text	P2
+TC048	Submit HTML/script-like text in a form	Input is handled safely; no script executes	P1
+TC049	Open an unauthorized account or order URL	Access is denied appropriately	P1
+TC050	Simulate a slow or failed request	Useful feedback appears; the UI does not remain indefinitely stuck	P2
+TC051	Refresh or revisit an unavailable route	Recovery behavior is sensible and consistent	P1
+TC052	Check browser console and failed network requests

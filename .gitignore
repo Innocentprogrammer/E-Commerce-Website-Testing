@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 /venv
+.github
+.pytest_cache/
+/automation/.env
+reports
